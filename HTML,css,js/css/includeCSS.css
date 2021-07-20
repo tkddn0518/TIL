@@ -1,0 +1,4 @@
+/* import를 통해 모든 css 파일 병합 */
+@import url(../css/root.css);
+@import url(../css/header.css);
+@import url(../css/footer.css);
