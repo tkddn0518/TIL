@@ -9,6 +9,9 @@
   --gray-light-color: #b7b7b7;
   /* Size */
 
+  /* Font */
+  --netmarble: "netmarbleM"; /* 넷마블 폰트 변수 추가 */
+
   /* Font Size */
   --font-large: 80px;
   --font-medium: 40px;
