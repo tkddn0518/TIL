@@ -12,8 +12,10 @@ header {
   padding: 0 70px;
   background-color: var(--blue-sub-color);
 }
-header button {
+header button,
+header a {
   font-size: var(--font-small);
+  font-family: var(--netmarble);
 }
 /* header .logo {
 } */

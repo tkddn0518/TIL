@@ -33,3 +33,7 @@ button {
   color: var(--white-color);
   background-color: transparent; /* 버튼 배경색 투명하게 */
 }
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
