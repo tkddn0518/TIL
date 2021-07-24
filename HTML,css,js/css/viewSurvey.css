@@ -1,1 +1,179 @@
 @import url(/static/css/root.css);
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 228px;
+}
+/* title_section */
+.title_section {
+  width: 100%;
+  height: 400px;
+  background-color: var(--blue-main-color);
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.title_section .buttons {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.title_section .buttons .home_button,
+.title_section .buttons .select_button {
+  width: 15px;
+  height: 15px;
+  background-color: var(--white-color);
+}
+.title_section .buttons span {
+  font-size: var(--font-micro);
+  color: var(--white-color);
+}
+.title_section .main_title {
+  color: var(--white-color);
+  font-size: var(--font-medium);
+  font-weight: 100;
+}
+.title_section .main_title span {
+  font-family: var(--netmarble);
+}
+.title_section .logo {
+  width: 500px;
+  height: 200px;
+  background-color: var(--white-color);
+}
+/* recommend_section */
+.recommend_section {
+  width: 100%;
+  height: 600px;
+  background-color: var(--white-color);
+  margin-bottom: 120px;
+}
+.recommend_section .select_interest {
+  height: 100%;
+  background-color: var(--blue-main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 30px 30px 30px;
+}
+.recommend_section .titles {
+  color: var(--white-color);
+}
+.recommend_section .titles .main_title {
+  font-size: var(--font-normal);
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 130%;
+}
+.recommend_section .titles .sub_title {
+  font-size: var(--font-small);
+  line-height: 170%;
+}
+.recommend_section .buttons {
+  align-items: flex-start;
+}
+.recommend_section .buttons button {
+  font-size: var(--font-small);
+  width: 80px;
+  height: 40px;
+  border-radius: 45px;
+  border: 1px solid var(--white-color);
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.recommend_section .recommend_list {
+  height: 100%;
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray-light-color);
+  border-bottom: 1px solid var(--gray-light-color);
+  border-right: 1px solid var(--gray-light-color);
+}
+.recommend_section .recommend_list .title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.recommend_section .recommend_list .title .recommend_title {
+  font-size: var(--font-normal);
+}
+.recommend_section .recommend_list .title .days {
+  font-size: var(--font-small);
+}
+.recommend_section .recommend_list .image {
+  width: 250px;
+  height: 250px;
+  background-color: var(--black-color);
+}
+/* keyword_section */
+.keyword_section {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: unset;
+  margin-bottom: 50px;
+}
+.keyword_section .keyword_list {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+.keyword_section .keyword_list button {
+  width: 100px;
+  height: 50px;
+  color: var(--black-color);
+  font-size: var(--font-small);
+  font-weight: bold;
+}
+.keyword_section .keyword_list .selected {
+  color: var(--blue-main-color);
+  border-bottom: 5px solid var(--blue-main-color);
+}
+.keyword_section .line {
+  width: 100%;
+  border-bottom: 5px solid var(--gray-light-color);
+  margin-bottom: 20px;
+}
+.keyword_section .hashtag_list {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+.keyword_section .hashtag_list button {
+  width: 80px;
+  height: 25px;
+  color: var(--blue-main-color);
+  border: 1px solid var(--blue-main-color);
+  border-radius: 25px;
+  font-size: var(--font-micro);
+}
+/* content_section */
+.content_section {
+  height: fit-content;
+  margin-bottom: 50px;
+}
+.content_section .content {
+  width: 300px;
+  height: 200px;
+  border: 1px solid var(--gray-light-color);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+.content_section .content .title {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-small);
+  font-weight: 600;
+}
+.content_section .content .hashtag {
+  color: var(--gray-dark-color);
+}
