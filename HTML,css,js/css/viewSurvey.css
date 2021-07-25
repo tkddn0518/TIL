@@ -131,7 +131,12 @@ section {
   font-size: var(--font-small);
   font-weight: bold;
 }
-.keyword_section .keyword_list .selected {
+.keyword_section .keyword_list .keyword-active {
+  color: var(--blue-main-color);
+  border-bottom: 5px solid var(--blue-main-color);
+}
+/* 마우스 올렸을 때 효과 */
+.keyword_section .keyword_list button:hover {
   color: var(--blue-main-color);
   border-bottom: 5px solid var(--blue-main-color);
 }
