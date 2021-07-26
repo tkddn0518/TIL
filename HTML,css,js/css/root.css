@@ -10,7 +10,9 @@
   /* Size */
 
   /* Font */
-  --netmarble: "netmarbleM"; /* 넷마블 폰트 변수 추가 */
+  --netmarbleL: "netmarbleL";
+  --netmarbleM: "netmarbleM";
+  --netmarbleB: "netmarbleB";
 
   /* Font Size */
   --font-large: 80px;
@@ -18,7 +20,14 @@
   --font-normal: 30px;
   --font-small: 20px;
   --font-micro: 13px;
+
+  /* Font weight */
+  --nanum-light: 300;
+  --nanum-regular: 400;
+  --nanum-bold: 700;
+  --nanum-extrabold: 800;
 }
+
 * {
   padding: 0;
   margin: 0;

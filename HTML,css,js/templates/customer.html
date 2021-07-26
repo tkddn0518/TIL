@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>고객센터</title>
+    <link rel="stylesheet" href="C:\Users\hyoan\Desktop\fontello\css\fontello.css">
+    <script src="../js/includeHTML.js"></script> 
+    <link rel="stylesheet" href="../css/includeCSS.css">
+</head>
+<body>
+    <header include-html="header.html"></header>
+    <section class="title_section">
+        <div class="titles">
+            <div class="buttons">
+                <button type="button" id="home" onclick="location.href='http://127.0.0.1:5500/mainapp/templates/mainapp/home.html'"> &#xe800</button>
+                <span id="next1">></span>
+        
+                <select id="menu1" onchange="location.href=this.value">
+                    <option value="설문등록페이지링크">설문 등록</option>
+                    <option value="http://127.0.0.1:5500/boardapp/templates/boardapp/viewSurvey.html">설문 조회</option>
+                    <option value="http://127.0.0.1:5500/mypageapp/templates/mypage.html">마이페이지</option>
+                    <option value="http://127.0.0.1:5500/customerapp/templates/customer.html" selected>고객센터</option>
+                </select>
+            </div>
+    
+            <div class="title"><span id="customer">고객센터</span>에서 궁금증을 해결해봐요</div>
+
+        </div>
+
+        <div class="character">
+            <img id="chr1" src="/image/red.png" alt="캐릭터">
+            <img id="chr2" src="/image/red.png" alt="캐릭터">
+            <img id="chr3" src="/image/red.png" alt="캐릭터">
+        </div>
+    </section>
+
+    <section class="first_sec">
+        <div class="menu">
+            <div class="item" onclick="location.href= '공지사항링크' ">
+                <div class="m_title">공지사항</div>
+                <div class="m_info">청설모의 다양한 소식과 공지를 <br>만나보실 수 있어요</div>
+            </div>
+            <div class="item" onclick="location.href= '자주질문링크' ">
+                <div class="m_title">자주하는 질문</div>
+                <div class="m_info">청설모를 이용하시며 궁금한 사항이<br>있으시다면 자주하는 질문에서<br>확인해보세요</div>
+            </div>
+            <div class="item" onclick="location.href= '일대일문의링크' ">
+                <div class="m_title">1:1 문의</div>
+                <div class="m_info">도움이 필요하시다면<br>1:1 문의를 통해 직접 문의를 <br>남겨보세요</div>
+            </div>
+            <div class="item" onclick="location.href= '이벤트링크' ">
+                <div class="m_title">이벤트</div>
+                <div class="m_info">청설모에서 진행하는 다양한<br>이벤트들을 확인해보세요</div>
+            </div>
+        </div>
+        <div class="board">
+            <div class="item">
+                <div class="b_title">
+                    <div class="category">공지사항</div>
+                    <div class="plus" onclick="location.href= '공지사항링크' "> 
+                        <div>더보기</div>
+                        <div id="symbol">+</div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="notice">
+                        <div class="time">
+                            <div class="date">11</div>
+                            <div class="month">2021.07</div>
+                        </div>
+                        <div class="mark">중요</div>
+                        <div class="headline" onclick="location.href= '해당공지링크' " >공지사항 제목 공지사항 제목 공지사항 제목 공지사항 제목 공지..</div>
+                    </div>
+                    <div class="notice">
+                        <div class="time">
+                            <div class="date">11</div>
+                            <div class="month">2021.07</div>
+                        </div>
+                        <div class="mark">중요</div>
+                        <div class="headline" onclick="location.href= '해당공지링크' ">공지사항 제목 공지사항 제목 공지사항 제목</div>
+                    </div>
+                    <div class="notice">
+                        <div class="time">
+                            <div class="date">11</div>
+                            <div class="month">2021.07</div>
+                        </div>
+                        <div class="mark">중요</div>
+                        <div class="headline" onclick="location.href= '해당공지링크' ">공지사항 제목 공지사항 제목 공지사항 제목</div>
+                    </div>
+                    <div class="notice">
+                        <div class="time">
+                            <div class="date">11</div>
+                            <div class="month">2021.07</div>
+                        </div>
+                        <div class="mark">중요</div>
+                        <div class="headline" onclick="location.href= '해당공지링크' ">공지사항 제목 공지사항 제목 공지사항 제목</div>
+                    </div>
+                    <div class="notice">
+                        <div class="time">
+                            <div class="date">11</div>
+                            <div class="month">2021.07</div>
+                        </div>
+                        <div class="mark">중요</div>
+                        <div class="headline" onclick="location.href= '해당공지링크' ">공지사항 제목 공지사항 제목 공지사항 제목</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="b_title">
+                    <div class="category">자주하는 질문</div>
+                    <div class="plus" onclick="location.href= '질문링크' "> 
+                        <div>더보기</div>
+                        <div id="symbol">+</div>
+                    </div>
+                </div>
+
+                <div class="list">
+                    <div class="question">
+                        <div class="number">01</div>
+                        <div class="qmark">리워드</div>
+                        <div class="headline" onclick="location.href= '해당질문링크' ">공지사항 제목 공지사항 제목 공지사항 제목 공지사항 제목..</div>
+                    </div>
+                    <div class="question">
+                        <div class="number">02</div>
+                        <div class="qmark">설문조회</div>
+                        <div class="headline" onclick="location.href= '해당질문링크' ">공지사항 제목 공지사항 제목 공지사항 제목</div>
+                    </div>
+
+                    <div class="question">
+                        <div class="number">03</div>
+                        <div class="qmark">설문등록</div>
+                        <div class="headline" onclick="location.href= '해당질문링크' ">공지사항 제목 공지사항 제목 공지사항 제목</div>
+                    </div>
+
+                    <div class="question">
+                        <div class="number">04</div>
+                        <div class="qmark">FAQ</div>
+                        <div class="headline" onclick="location.href= '해당질문링크' ">공지사항 제목 공지사항 제목 공지사항 제목</div>
+                    </div>
+
+                    <div class="question">
+                        <div class="number">05</div>
+                        <div class="qmark">카테고리</div>
+                        <div class="headline" onclick="location.href= '해당질문링크' ">공지사항 제목 공지사항 제목 공지사항 제목</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <section class="second_sec">
+        <div class="event">EVENT</div>
+        <div class="more_event" onclick="location.href= '이벤트링크' ">이벤트 더 보기</div>
+        <img id="eventchr" src="/image/yello.png" alt="이벤트캐릭터">
+        <div class="event_right"></div>
+        <div class="event_bar">
+            <div class="event_box" onclick="location.href= '해당이벤트링크'">
+                <div class="event_picture"></div>
+                <div class="event_title">이벤트 제목 제목 제목 제목</div>
+                <div class="event_info">이벤트 내용 간략 설명</div>
+                <div class="event_period">07.01 - 07.25</div>
+            </div>
+            
+            <div class="event_box" onclick="location.href= '해당이벤트링크'">
+                <div class="event_picture"></div>
+                <div class="event_title">이벤트 제목 제목 제목 제목</div>
+                <div class="event_info">이벤트 내용 간략 설명</div>
+                <div class="event_period">07.01 - 07.25</div>
+            </div>
+            
+            <div class="event_box" onclick="location.href= '해당이벤트링크'"">
+                <div class="event_picture"></div>
+                <div class="event_title">이벤트 제목 제목 제목 제목</div>
+                <div class="event_info">이벤트 내용 간략 설명</div>
+                <div class="event_period">07.01 - 07.25</div>
+            </div>
+        </div>
+
+    </section>
+    <footer include-html="footer.html"></footer>
+</body>
+<script>
+    includeHTML();
+</script>
+</html>

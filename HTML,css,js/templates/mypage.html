@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지-내 정보</title>
+    <link rel="stylesheet" href="C:\Users\hyoan\Desktop\fontello\css\fontello.css">
+    <script src="../js/includeHTML.js"></script> 
+    <link rel="stylesheet" href="../css/includeCSS.css">
+</head>
+<body>
+    <header include-html="header.html"></header>
+    <section class="title_section">
+        <div class="titles">
+            <div class="buttons">
+                <button type="button" id="home" onclick="location.href='http://127.0.0.1:5500/mainapp/templates/mainapp/home.html'"> &#xe800</button>
+                <span id="next1">></span>
+        
+                <select id="menu1" onchange="location.href=this.value">
+                    <option value="설문등록페이지링크">설문 등록</option>
+                    <option value="http://127.0.0.1:5500/boardapp/templates/boardapp/viewSurvey.html">설문 조회</option>
+                    <option value="http://127.0.0.1:5500/mypageapp/templates/mypage.html" selected>마이페이지</option>
+                    <option value="http://127.0.0.1:5500/customerapp/templates/customer.html">고객센터</option>
+                </select>
+        
+                <span id="next2">></span>
+        
+                <select id="menu2" onchange="location.href=this.value">
+                    <option value="내정보링크" selected>내 정보</option>
+                    <option value="내포인트링크">나의 포인트</option>
+                    <option value="내설문링크">내 설문조사</option>
+                    <option value="내문의링크">나의 문의사항</option>
+                </select>
+            </div>
+    
+            <div class="title"><span id="my">마이페이지</span>에서 회원님의 정보를 확인하세요</div>
+
+        </div>
+
+        <div class="character">
+            <img id="chr1" src="/image/red.png" alt="캐릭터">
+            <img id="chr2" src="/image/red.png" alt="캐릭터">
+            <img id="chr3" src="/image/red.png" alt="캐릭터">
+        </div>
+    </section>
+
+    
+    <section class="content">
+        <nav>
+            <div class="hello">안녕하세요, ooo 님!</div>
+            <div id="circle">
+                <img id="chr4" src="/image/yello.png" alt="프로필이미지">
+            </div>
+
+            <div class="current">
+                <div>
+                    <div class="title">포인트</div>
+                    <div class="info">0000P</div>
+                </div>
+                
+                <div>
+                    <div class="title">설문등록</div>
+                    <div class="info">00개</div>
+                </div>
+
+                <div>
+                    <div class="title">설문참여</div>
+                    <div class="info">00개</div>                  
+                </div>
+            </div>    
+
+            <div class="side_bar">
+                <div class="item">
+                    <div style="cursor: pointer;" onclick="location.href= 'http://127.0.0.1:5500/mypageapp/templates/mypage.html' " id="s1">
+                        내 정보
+                    </div>
+                </div>                     
+                    
+                <div class="item">
+                    <div style="cursor: pointer;" onclick="location.href= '내포인트링크' " id="s2">
+                        나의 포인트
+                    </div> 
+                </div>
+                    
+                 <div class="item">
+                    <div style="cursor: pointer;" onclick="location.href= '내설문링크'" id="s3">
+                        내 설문조사
+                    </div> 
+                </div>
+                    
+                <div class="item">
+                    <div style="cursor: pointer;" onclick="location.href= '내문의링크'" id="s4">
+                        나의 문의사항
+                    </div> 
+                </div>
+                    
+                <div class="item">
+                    <div style="cursor: pointer;" onclick="location.href= 'http://127.0.0.1:5500/mainapp/templates/mainapp/home.html'" id="s5">
+                        로그아웃
+                    </div> 
+                </div> 
+            </div>
+        </nav>
+        
+        <main>
+            <div class="info_box">
+                <div id="my_info">내 정보</div>
+
+                <div class="details">
+                    <ul>
+                        <li>
+                            <label for="user_name">이름</label><br>
+                            <div class="box">
+                                <input type="text" id="user_name" required>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <label for="mail">이메일</label><br>                            
+                            <div class="box">
+                                <input type="email" id="mail" required>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <label for="pw1">비밀번호<span id="pw_info"> &nbsp; 특수 문자, 숫자, 문자를 조합하여 8자리 이상으로 만들어주세요</span></label><br>                           
+                            <div class="box">
+                                <input type="password" id="pw1" required>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <label for="pw2">비밀번호 확인</label><br>                           
+                            <div class="box">
+                                <input type="password" id="pw2" required>                              
+                            </div>
+                        </li>
+                    </select>
+                </ul>
+                <div class="interest">
+                    <label>관심 분야 </label>
+                        <div class="container">
+                            <select class="interest_sel">
+                                <option>IT/과학</option>
+                                <option>경영/창업</option>
+                                <option>예술</option>
+                                <option>인문/사회</option>
+                                <option>심리학</option>
+                                <option>뷰티/미용</option>
+                            </select>
+    
+                            <select class="interest_sel">
+                                <option>IT/과학</option>
+                                <option>경영/창업</option>
+                                <option>예술</option>
+                                <option>인문/사회</option>
+                                <option>심리학</option>
+                                <option>뷰티/미용</option>
+                            </select>
+                        </div>
+                </div>
+
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer include-html="footer.html"></footer>
+</body>
+<script>
+    includeHTML();
+</script>
+</html>
